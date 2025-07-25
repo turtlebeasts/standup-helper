@@ -1,12 +1,68 @@
-# React + Vite
+# 🧠 JokeStack - A Scalable, Modular Joke App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**JokeStack** is not your average joke-fetching project.
 
-Currently, two official plugins are available:
+This app was built with a real-world mindset — focused on **clean architecture**, **global state management**, and **scalability**. It demonstrates how even a simple idea can be engineered like a production-grade application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔁 Fetches 10 random jokes from a public API
+- ➕ Add jokes to your personal favorites list
+- 🔄 Refresh joke list from anywhere in the app
+- ⬇️ Load more jokes dynamically with `Load More` button
+- ❌ Remove jokes from favorites
+- 💾 Zustand-powered global state for jokes and favorites
+- ⚡ Tailwind CSS for a responsive, mobile-first UI
+
+---
+
+## 🛠 Tech Stack
+
+- **React** (Functional Components + Hooks)
+- **Zustand** for global state management
+- **Tailwind CSS** for utility-first styling
+- **Framer Motion** (optional for animation)
+- **React Icons** for icons
+
+---
+
+## 🧠 Why It's Different
+
+This isn't a toy app. JokeStack is built like a **real product**:
+
+### ✅ Scalable State Management
+
+Zustand powers both the joke list and favorites with **fully isolated, reactive global state**. This means:
+
+- Refreshing jokes from any component (like a Navbar button) works out-of-the-box
+- No prop drilling
+- No context hell
+
+### ✅ Clean Separation of Concerns
+
+- Components are **pure and dumb** — they just render what they're given
+- Zustand stores handle all logic: fetching, appending, deduping, etc.
+- Easy to plug in new features (search, pagination, infinite scroll)
+
+### ✅ Designed for Growth
+
+You can easily add:
+
+- Joke search
+- Joke categories or filters
+- Routing (`/favorites`, `/about`, etc.)
+- Persistent favorites via `localStorage`
+- Toasts/snackbars with `react-hot-toast`
+
+All **without breaking or refactoring anything**. That’s the power of modular architecture.
+
+## ⚙️ Getting Started
+
+```bash
+git clone https://github.com/your-username/jokestack.git
+cd jokestack
+npm install
+npm run dev
+```
