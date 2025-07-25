@@ -1,6 +1,6 @@
-# 🧠 JokeStack - A Scalable, Modular Joke App
+# 🧠 Standup-helper - A Scalable, Modular Joke App
 
-**JokeStack** is not your average joke-fetching project.
+**Standup-helper** is not your average joke-fetching project.
 
 This app was built with a real-world mindset — focused on **clean architecture**, **global state management**, and **scalability**. It demonstrates how even a simple idea can be engineered like a production-grade application.
 
@@ -30,7 +30,7 @@ This app was built with a real-world mindset — focused on **clean architecture
 
 ## 🧠 Why It's Different
 
-This isn't a toy app. JokeStack is built like a **real product**:
+This isn't a toy app. Standup-helper is built like a **real product**:
 
 ### ✅ Scalable State Management
 
@@ -61,8 +61,8 @@ All **without breaking or refactoring anything**. That’s the power of modular 
 ## ⚙️ Getting Started
 
 ```bash
-git clone https://github.com/your-username/jokestack.git
-cd jokestack
+git clone https://github.com/turtlebeasts/standup-helper.git
+cd standup-helper
 npm install
 npm run dev
 ```
